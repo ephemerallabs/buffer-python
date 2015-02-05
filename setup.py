@@ -10,7 +10,7 @@ requires_list = [
 ]
 
 setup(name='buffer-python',
-      version='1.07',
+      version='1.8',
       platforms='any',
       description='Python library for Buffer App',
       author='Vlad Temian',
