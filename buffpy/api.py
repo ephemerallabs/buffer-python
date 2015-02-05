@@ -54,6 +54,9 @@ class API(object):
 
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 
+    # quick fix unicode issue
+    params['data'] = unicode(params['data']).encode('utf-8')
+
     response = self.session.post(url=BASE_URL % url, headers=headers, **params)
 
     return parser(response.content)
